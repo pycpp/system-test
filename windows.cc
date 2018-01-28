@@ -16,7 +16,7 @@ PYCPP_USING_NAMESPACE
 
 TEST(windows_defines, windows_defines)
 {
-#if defined(OS_WINDOWS)
+#if defined(PYCPP_WINDOWS)
 
 #   ifndef ERROR_ELEVATION_REQUIRED
 #      error ERROR_ELEVATION_REQUIRED
@@ -50,7 +50,7 @@ TEST(windows_defines, windows_defines)
 #      error ERROR_MUI_FILE_NOT_LOADED
 #   endif
 
-#endif                  // defined(OS_WINDOWS)
+#endif                  // defined(PYCPP_WINDOWS)
 }
 
 
